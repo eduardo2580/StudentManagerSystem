@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,16 +23,6 @@ namespace StudentManager
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -51,6 +42,20 @@ namespace StudentManager
         private void labelPassword_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            MEU_BD bancoDeDados = new MEU_BD();
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            DataTable tabela = new DataTable();
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM 'usuarios' WHERE 'username' = @usn AND 'senha' = @psw", bancoDeDados.getConexao);
         }
     }
 }
