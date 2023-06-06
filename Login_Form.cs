@@ -55,7 +55,24 @@ namespace StudentManager
 
             MySqlDataAdapter adaptador = new MySqlDataAdapter();
             DataTable tabela = new DataTable();
-            MySqlCommand comando = new MySqlCommand("SELECT * FROM 'usuarios' WHERE 'username' = @usn AND 'senha' = @psw", bancoDeDados.getConexao);
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM `usuarios` WHERE `username` = @usn AND `password` = @psw", bancoDeDados.getConexao);
+
+            // Atualiza o valor do parâmetro @usn e @psw, do comando acima.
+            comando.Parameters.Add("@usn", MySqlDbType.VarChar).Value = txtUsuario.Text;
+            comando.Parameters.Add("@psw", MySqlDbType.VarChar).Value = txtSenha.Text;
+
+            adaptador.SelectCommand = comando;
+
+            adaptador.Fill(tabela);
+
+            if(tabela.Rows.Count > 0)
+            {
+                MessageBox.Show("YES");
+            }
+            else
+            {
+                MessageBox.Show("NO");
+            }
         }
     }
 }
