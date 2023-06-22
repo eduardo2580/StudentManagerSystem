@@ -29,12 +29,23 @@ namespace StudentManager
 
         private void FormInserirEstudante_Load(object sender, EventArgs e)
         {
-
+            // Coloca a imagem user.png na picture box da janela.
+            pictureBoxFoto.Image = Image.FromFile("../../imagens/user.png");
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

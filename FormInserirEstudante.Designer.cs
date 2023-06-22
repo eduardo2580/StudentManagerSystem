@@ -29,70 +29,76 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInserirEstudante));
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePickerNascimento = new System.Windows.Forms.DateTimePicker();
+            this.radioButtonFemenino = new System.Windows.Forms.RadioButton();
+            this.radioButtonMasculino = new System.Windows.Forms.RadioButton();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxSobrenome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
+            this.textBoxEndereco = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonEnviarFoto = new System.Windows.Forms.Button();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // dateTimePickerNascimento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(190, 88);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(229, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePickerNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerNascimento.Location = new System.Drawing.Point(190, 88);
+            this.dateTimePickerNascimento.Name = "dateTimePickerNascimento";
+            this.dateTimePickerNascimento.Size = new System.Drawing.Size(229, 26);
+            this.dateTimePickerNascimento.TabIndex = 0;
             // 
-            // radioButton1
+            // radioButtonFemenino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(97, 9);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Femenino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonFemenino.AutoSize = true;
+            this.radioButtonFemenino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonFemenino.Location = new System.Drawing.Point(125, 9);
+            this.radioButtonFemenino.Name = "radioButtonFemenino";
+            this.radioButtonFemenino.Size = new System.Drawing.Size(98, 24);
+            this.radioButtonFemenino.TabIndex = 1;
+            this.radioButtonFemenino.TabStop = true;
+            this.radioButtonFemenino.Text = "Femenino";
+            this.radioButtonFemenino.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonMasculino
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 9);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Masculino";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonMasculino.AutoSize = true;
+            this.radioButtonMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonMasculino.Location = new System.Drawing.Point(6, 9);
+            this.radioButtonMasculino.Name = "radioButtonMasculino";
+            this.radioButtonMasculino.Size = new System.Drawing.Size(98, 24);
+            this.radioButtonMasculino.TabIndex = 2;
+            this.radioButtonMasculino.TabStop = true;
+            this.radioButtonMasculino.Text = "Masculino";
+            this.radioButtonMasculino.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNome.Location = new System.Drawing.Point(190, 11);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(229, 26);
+            this.textBoxNome.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 11);
+            this.label1.Location = new System.Drawing.Point(62, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 4;
@@ -103,25 +109,26 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 50);
+            this.label2.Location = new System.Drawing.Point(48, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Sobrenome";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // textBoxSobrenome
             // 
-            this.textBox2.Location = new System.Drawing.Point(190, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(229, 20);
-            this.textBox2.TabIndex = 6;
+            this.textBoxSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSobrenome.Location = new System.Drawing.Point(190, 50);
+            this.textBoxSobrenome.Name = "textBoxSobrenome";
+            this.textBoxSobrenome.Size = new System.Drawing.Size(229, 26);
+            this.textBoxSobrenome.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 88);
+            this.label3.Location = new System.Drawing.Point(12, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(161, 18);
             this.label3.TabIndex = 7;
@@ -131,50 +138,52 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 119);
+            this.label4.Location = new System.Drawing.Point(48, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Gênero";
             // 
-            // pictureBox1
+            // pictureBoxFoto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(246, 243);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 115);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxFoto.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxFoto.Name = "pictureBoxFoto";
+            this.pictureBoxFoto.Size = new System.Drawing.Size(120, 120);
+            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFoto.TabIndex = 9;
+            this.pictureBoxFoto.TabStop = false;
             // 
-            // textBox3
+            // textBoxEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 181);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(229, 56);
-            this.textBox3.TabIndex = 10;
+            this.textBoxEndereco.Location = new System.Drawing.Point(190, 194);
+            this.textBoxEndereco.Multiline = true;
+            this.textBoxEndereco.Name = "textBoxEndereco";
+            this.textBoxEndereco.Size = new System.Drawing.Size(229, 56);
+            this.textBoxEndereco.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 145);
+            this.label5.Location = new System.Drawing.Point(48, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "Telefone";
             // 
-            // textBox4
+            // textBoxTelefone
             // 
-            this.textBox4.Location = new System.Drawing.Point(190, 155);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(229, 20);
-            this.textBox4.TabIndex = 12;
+            this.textBoxTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTelefone.Location = new System.Drawing.Point(190, 162);
+            this.textBoxTelefone.Name = "textBoxTelefone";
+            this.textBoxTelefone.Size = new System.Drawing.Size(229, 26);
+            this.textBoxTelefone.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(48, 181);
+            this.label6.Location = new System.Drawing.Point(48, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 13;
@@ -191,73 +200,92 @@
             this.label7.Text = "Foto";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // button1
+            // buttonEnviarFoto
             // 
-            this.button1.Location = new System.Drawing.Point(246, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 31);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Enviar Foto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonEnviarFoto.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.buttonEnviarFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEnviarFoto.Location = new System.Drawing.Point(246, 382);
+            this.buttonEnviarFoto.Name = "buttonEnviarFoto";
+            this.buttonEnviarFoto.Size = new System.Drawing.Size(120, 31);
+            this.buttonEnviarFoto.TabIndex = 15;
+            this.buttonEnviarFoto.Text = "Enviar Foto";
+            this.buttonEnviarFoto.UseVisualStyleBackColor = false;
+            this.buttonEnviarFoto.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonCadastrar
             // 
-            this.button2.Location = new System.Drawing.Point(52, 421);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 31);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.BackColor = System.Drawing.Color.Green;
+            this.buttonCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastrar.Location = new System.Drawing.Point(52, 442);
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.Size = new System.Drawing.Size(136, 50);
+            this.buttonCadastrar.TabIndex = 16;
+            this.buttonCadastrar.Text = "Cadastrar";
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // buttonCancelar
             // 
-            this.button3.Location = new System.Drawing.Point(246, 421);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 31);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonCancelar.BackColor = System.Drawing.Color.Red;
+            this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.Location = new System.Drawing.Point(231, 442);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(135, 50);
+            this.buttonCancelar.TabIndex = 17;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(199, 114);
+            this.groupBox1.Controls.Add(this.radioButtonMasculino);
+            this.groupBox1.Controls.Add(this.radioButtonFemenino);
+            this.groupBox1.Location = new System.Drawing.Point(190, 114);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(173, 33);
+            this.groupBox1.Size = new System.Drawing.Size(229, 42);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.pictureBoxFoto);
+            this.groupBox2.Location = new System.Drawing.Point(246, 256);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(120, 120);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
             // 
             // FormInserirEstudante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(437, 504);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonCadastrar);
+            this.Controls.Add(this.buttonEnviarFoto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxTelefone);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxSobrenome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textBoxNome);
+            this.Controls.Add(this.dateTimePickerNascimento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormInserirEstudante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormInserirEstudante";
+            this.Text = "SGA - Form Cadastrar Estudante";
             this.Load += new System.EventHandler(this.FormInserirEstudante_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,24 +293,25 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNascimento;
+        private System.Windows.Forms.RadioButton radioButtonFemenino;
+        private System.Windows.Forms.RadioButton radioButtonMasculino;
+        private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxSobrenome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.PictureBox pictureBoxFoto;
+        private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonEnviarFoto;
+        private System.Windows.Forms.Button buttonCadastrar;
+        private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

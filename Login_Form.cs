@@ -75,5 +75,10 @@ namespace StudentManager
                 MessageBox.Show("Usuário ou senha inválidos", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
