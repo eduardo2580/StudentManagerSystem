@@ -38,14 +38,22 @@ namespace StudentManager
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void buttonEnviarFoto_Click(object sender, EventArgs e)
+        {
+            // Cria uma caixa de diálogo para enviar a foto do aluno.
+            OpenFileDialog inserirFoto = new OpenFileDialog();
+            // Filtrar os tipos de arquivo que podem ser enviados.
+            inserirFoto.Filter = "Selecionar Imagem(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif;";
+            if (inserirFoto.ShowDialog() == DialogResult.OK)
+            {
+                pictureBoxFoto.Image = Image.FromFile(inserirFoto.FileName);
+            }
+
         }
     }
 }

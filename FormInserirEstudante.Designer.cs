@@ -210,7 +210,7 @@
             this.buttonEnviarFoto.TabIndex = 15;
             this.buttonEnviarFoto.Text = "Enviar Foto";
             this.buttonEnviarFoto.UseVisualStyleBackColor = false;
-            this.buttonEnviarFoto.Click += new System.EventHandler(this.button1_Click);
+            this.buttonEnviarFoto.Click += new System.EventHandler(this.buttonEnviarFoto_Click);
             // 
             // buttonCadastrar
             // 
