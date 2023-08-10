@@ -33,17 +33,17 @@
             this.radioButtonFemenino = new System.Windows.Forms.RadioButton();
             this.radioButtonMasculino = new System.Windows.Forms.RadioButton();
             this.textBoxNome = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelNome = new System.Windows.Forms.Label();
+            this.labelSobrenome = new System.Windows.Forms.Label();
             this.textBoxSobrenome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelTelefone = new System.Windows.Forms.Label();
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelFoto = new System.Windows.Forms.Label();
             this.buttonEnviarFoto = new System.Windows.Forms.Button();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
@@ -94,27 +94,27 @@
             this.textBoxNome.Size = new System.Drawing.Size(229, 26);
             this.textBoxNome.TabIndex = 3;
             // 
-            // label1
+            // labelNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nome";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelNome.AutoSize = true;
+            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNome.Location = new System.Drawing.Point(62, 14);
+            this.labelNome.Name = "labelNome";
+            this.labelNome.Size = new System.Drawing.Size(55, 20);
+            this.labelNome.TabIndex = 4;
+            this.labelNome.Text = "Nome";
+            this.labelNome.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelSobrenome
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Sobrenome";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelSobrenome.AutoSize = true;
+            this.labelSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSobrenome.Location = new System.Drawing.Point(48, 53);
+            this.labelSobrenome.Name = "labelSobrenome";
+            this.labelSobrenome.Size = new System.Drawing.Size(101, 20);
+            this.labelSobrenome.TabIndex = 5;
+            this.labelSobrenome.Text = "Sobrenome";
+            this.labelSobrenome.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBoxSobrenome
             // 
@@ -152,6 +152,7 @@
             this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFoto.TabIndex = 9;
             this.pictureBoxFoto.TabStop = false;
+            this.pictureBoxFoto.Click += new System.EventHandler(this.pictureBoxFoto_Click);
             // 
             // textBoxEndereco
             // 
@@ -161,15 +162,15 @@
             this.textBoxEndereco.Size = new System.Drawing.Size(229, 56);
             this.textBoxEndereco.TabIndex = 10;
             // 
-            // label5
+            // labelTelefone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Telefone";
+            this.labelTelefone.AutoSize = true;
+            this.labelTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTelefone.Location = new System.Drawing.Point(48, 162);
+            this.labelTelefone.Name = "labelTelefone";
+            this.labelTelefone.Size = new System.Drawing.Size(79, 20);
+            this.labelTelefone.TabIndex = 11;
+            this.labelTelefone.Text = "Telefone";
             // 
             // textBoxTelefone
             // 
@@ -189,16 +190,16 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Endereço";
             // 
-            // label7
+            // labelFoto
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(48, 256);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 20);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Foto";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.labelFoto.AutoSize = true;
+            this.labelFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFoto.Location = new System.Drawing.Point(48, 256);
+            this.labelFoto.Name = "labelFoto";
+            this.labelFoto.Size = new System.Drawing.Size(46, 20);
+            this.labelFoto.TabIndex = 14;
+            this.labelFoto.Text = "Foto";
+            this.labelFoto.Click += new System.EventHandler(this.label7_Click);
             // 
             // buttonEnviarFoto
             // 
@@ -222,6 +223,7 @@
             this.buttonCadastrar.TabIndex = 16;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // buttonCancelar
             // 
@@ -265,22 +267,22 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.buttonEnviarFoto);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelFoto);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxTelefone);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelTelefone);
             this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxSobrenome);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSobrenome);
+            this.Controls.Add(this.labelNome);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.dateTimePickerNascimento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormInserirEstudante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SGA - Form Cadastrar Estudante";
+            this.Text = "SGA - Formulário para cadastrar estudante";
             this.Load += new System.EventHandler(this.FormInserirEstudante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -297,17 +299,17 @@
         private System.Windows.Forms.RadioButton radioButtonFemenino;
         private System.Windows.Forms.RadioButton radioButtonMasculino;
         private System.Windows.Forms.TextBox textBoxNome;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelNome;
+        private System.Windows.Forms.Label labelSobrenome;
         private System.Windows.Forms.TextBox textBoxSobrenome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBoxFoto;
         private System.Windows.Forms.TextBox textBoxEndereco;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelTelefone;
         private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelFoto;
         private System.Windows.Forms.Button buttonEnviarFoto;
         private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.Button buttonCancelar;
