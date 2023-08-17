@@ -56,7 +56,9 @@
             // 
             // dateTimePickerNascimento
             // 
+            this.dateTimePickerNascimento.CustomFormat = "dd/MM/yyyy";
             this.dateTimePickerNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerNascimento.Location = new System.Drawing.Point(190, 88);
             this.dateTimePickerNascimento.Name = "dateTimePickerNascimento";
             this.dateTimePickerNascimento.Size = new System.Drawing.Size(229, 26);
@@ -70,13 +72,13 @@
             this.radioButtonFemenino.Name = "radioButtonFemenino";
             this.radioButtonFemenino.Size = new System.Drawing.Size(98, 24);
             this.radioButtonFemenino.TabIndex = 1;
-            this.radioButtonFemenino.TabStop = true;
             this.radioButtonFemenino.Text = "Femenino";
             this.radioButtonFemenino.UseVisualStyleBackColor = true;
             // 
             // radioButtonMasculino
             // 
             this.radioButtonMasculino.AutoSize = true;
+            this.radioButtonMasculino.Checked = true;
             this.radioButtonMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonMasculino.Location = new System.Drawing.Point(6, 9);
             this.radioButtonMasculino.Name = "radioButtonMasculino";
@@ -280,6 +282,9 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.dateTimePickerNascimento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(453, 543);
+            this.MinimumSize = new System.Drawing.Size(453, 543);
             this.Name = "FormInserirEstudante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SGA - Formulário para cadastrar estudante";
