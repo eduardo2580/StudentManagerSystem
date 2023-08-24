@@ -18,9 +18,9 @@ namespace StudentManager
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAtualizar_Click(object sender, EventArgs e)
         {
-
+            // Atualiza a tabela de estudantes.
         }
 
         // Intaciação de uma classe, ou seja, criação de um objeto.
@@ -37,6 +37,11 @@ namespace StudentManager
             colunaDeImagens = (DataGridViewImageColumn)dataGridViewLista.Columns[7];
             colunaDeImagens.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridViewLista.AllowUserToAddRows = false;
+        }
+
+        private void dataGridViewLista_DoubleClick(object sender, EventArgs e)
+        {
+            // Abre o estudante slecionado em uma janela.
         }
     }
 }
