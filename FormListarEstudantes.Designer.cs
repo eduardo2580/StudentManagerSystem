@@ -43,6 +43,7 @@
             this.dataGridViewLista.Name = "dataGridViewLista";
             this.dataGridViewLista.Size = new System.Drawing.Size(794, 361);
             this.dataGridViewLista.TabIndex = 0;
+            this.dataGridViewLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLista_CellContentClick);
             this.dataGridViewLista.DoubleClick += new System.EventHandler(this.dataGridViewLista_DoubleClick);
             // 
             // buttonAtualizar

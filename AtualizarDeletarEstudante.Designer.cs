@@ -50,7 +50,7 @@
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.dateTimePickerNascimento = new System.Windows.Forms.DateTimePicker();
             this.labelid = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.buttonProcurar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
@@ -131,6 +131,7 @@
             this.buttonEditar.TabIndex = 33;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = false;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonEnviarFoto
             // 
@@ -266,13 +267,13 @@
             this.labelid.TabIndex = 37;
             this.labelid.Text = "ID";
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(51, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 26);
-            this.textBox1.TabIndex = 38;
+            this.textBoxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxID.Location = new System.Drawing.Point(51, 12);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(229, 26);
+            this.textBoxID.TabIndex = 38;
             // 
             // buttonProcurar
             // 
@@ -305,7 +306,7 @@
             this.ClientSize = new System.Drawing.Size(437, 569);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonProcurar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.labelid);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -326,7 +327,7 @@
             this.Controls.Add(this.dateTimePickerNascimento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AtualizarDeletarEstudante";
-            this.Text = "SGA - Editar ou Deletar Cadastro";
+            this.Text = "SGA - Editar ou Deletar Estudante";
             this.Load += new System.EventHandler(this.AtualizarDeletarEstudante_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
@@ -340,28 +341,28 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pictureBoxFoto;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButtonMasculino;
-        private System.Windows.Forms.RadioButton radioButtonFemenino;
         private System.Windows.Forms.Button buttonDeletar;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonEnviarFoto;
         private System.Windows.Forms.Label labelFoto;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Label labelTelefone;
-        private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxSobrenome;
         private System.Windows.Forms.Label labelSobrenome;
         private System.Windows.Forms.Label labelNome;
-        private System.Windows.Forms.TextBox textBoxNome;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNascimento;
         private System.Windows.Forms.Label labelid;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonProcurar;
         private System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.RadioButton radioButtonMasculino;
+        internal System.Windows.Forms.RadioButton radioButtonFemenino;
+        internal System.Windows.Forms.TextBox textBoxTelefone;
+        internal System.Windows.Forms.TextBox textBoxEndereco;
+        internal System.Windows.Forms.TextBox textBoxSobrenome;
+        internal System.Windows.Forms.TextBox textBoxNome;
+        internal System.Windows.Forms.DateTimePicker dateTimePickerNascimento;
+        internal System.Windows.Forms.TextBox textBoxID;
+        internal System.Windows.Forms.PictureBox pictureBoxFoto;
     }
 }
