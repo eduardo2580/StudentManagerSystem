@@ -120,6 +120,7 @@
             this.buttonDeletar.TabIndex = 34;
             this.buttonDeletar.Text = "Deletar";
             this.buttonDeletar.UseVisualStyleBackColor = false;
+            this.buttonDeletar.Click += new System.EventHandler(this.buttonDeletar_Click);
             // 
             // buttonEditar
             // 
@@ -327,6 +328,7 @@
             this.Controls.Add(this.dateTimePickerNascimento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AtualizarDeletarEstudante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SGA - Editar ou Deletar Estudante";
             this.Load += new System.EventHandler(this.AtualizarDeletarEstudante_Load);
             this.groupBox2.ResumeLayout(false);

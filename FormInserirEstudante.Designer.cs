@@ -287,7 +287,7 @@
             this.MinimumSize = new System.Drawing.Size(453, 543);
             this.Name = "FormInserirEstudante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SGA - Formulário para cadastrar estudante";
+            this.Text = "SGA - Cadastrar estudante";
             this.Load += new System.EventHandler(this.FormInserirEstudante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
