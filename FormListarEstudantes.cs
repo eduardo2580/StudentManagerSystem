@@ -22,6 +22,15 @@ namespace StudentManager
         private void buttonAtualizar_Click(object sender, EventArgs e)
         {
             // Atualiza a tabela de estudantes.
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM `estudantes`");
+            dataGridViewLista.ReadOnly = true;
+            DataGridViewImageColumn colunaDeImagens = new DataGridViewImageColumn();
+            dataGridViewLista.RowTemplate.Height = 80;
+            dataGridViewLista.DataSource = estudante.pegarEstudantes(comando);
+            colunaDeImagens = (DataGridViewImageColumn)dataGridViewLista.Columns[7];
+            colunaDeImagens.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            dataGridViewLista.AllowUserToAddRows = false;
+
         }
 
         // Intaciação de uma classe, ou seja, criação de um objeto.
@@ -48,6 +57,8 @@ namespace StudentManager
             atualizarDeletarEstudante.textBoxNome.Text = dataGridViewLista.CurrentRow.Cells[1].Value.ToString();
             atualizarDeletarEstudante.textBoxSobrenome.Text = dataGridViewLista.CurrentRow.Cells[2].Value.ToString();
             atualizarDeletarEstudante.dateTimePickerNascimento.Value = (DateTime)dataGridViewLista.CurrentRow.Cells[3].Value;
+
+            //Gênero
             if (dataGridViewLista.CurrentRow.Cells[4].Value.ToString() == "Feminino")
             {
                 atualizarDeletarEstudante.radioButtonFemenino.Checked = true;

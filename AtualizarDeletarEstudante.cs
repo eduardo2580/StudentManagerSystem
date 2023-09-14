@@ -131,20 +131,60 @@ namespace StudentManager
 
         private void buttonProcurar_Click(object sender, EventArgs e)
         {
-            // Procura estudantes pela ID.
-            int id = Convert.ToInt32(textBoxID.Text);
-            MySqlCommand comando = new MySqlCommand("SELECT `id`, `nome`, `sobrenome`, `nascimento`, `genero`, `telefone`, `endereco`, `foto` FROM `estudantes` WHERE `id`=" +id);
-
-            // Retorna uma tabela com os dados encontrado no comando acima.
-            DataTable tabela = estudante.pegarEstudantes(comando);
-
-            if (tabela.Rows.Count > 0)
+            try
             {
-                textBoxNome.Text = tabela.Rows[0]["nome"].ToString();
-                textBoxSobrenome.Text = tabela.Rows[0]["sobrenome"].ToString();
-                textBoxTelefone.Text = tabela.Rows[0]["telefone"].ToString();
-                textBoxEndereco.Text = tabela.Rows[0]["endereco"].ToString();
-                dateTimePickerNascimento.Value = (DateTime)tabela.Rows[0]["nascimento"];
+                // Procura estudantes pela ID.
+                int id = Convert.ToInt32(textBoxID.Text);
+                MySqlCommand comando = new MySqlCommand("SELECT `id`, `nome`, `sobrenome`, `nascimento`, `genero`, `telefone`, `endereco`, `foto` FROM `estudantes` WHERE `id`=" + id);
+
+                // Retorna uma tabela com os dados encontrado no comando acima.
+                DataTable tabela = estudante.pegarEstudantes(comando);
+
+                if (tabela.Rows.Count > 0)
+                {
+                    textBoxNome.Text = tabela.Rows[0]["nome"].ToString();
+                    textBoxSobrenome.Text = tabela.Rows[0]["sobrenome"].ToString();
+                    textBoxTelefone.Text = tabela.Rows[0]["telefone"].ToString();
+                    textBoxEndereco.Text = tabela.Rows[0]["endereco"].ToString();
+
+                    dateTimePickerNascimento.Value = (DateTime)tabela.Rows[0]["nascimento"];
+
+                    if (tabela.Rows[0]["genero"].ToString() == "Feminino")
+                    {
+                        radioButtonFemenino.Checked = true;
+                    }
+                    else
+                    {
+                        radioButtonMasculino.Checked = true;
+                    }
+
+                    // Conversões: implícita (tipoX = tipoY, explicita ((tipo) dado), métodos Parse (float.Parse...) e métodos "To..." (ToString(), ToInt()...)
+                    byte[] fotoDoBancoDeDados = (byte[])tabela.Rows[0]["foto"];
+                    MemoryStream fotoDaInterface = new MemoryStream(fotoDoBancoDeDados);
+                    pictureBoxFoto.Image = Image.FromStream(fotoDaInterface);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Estudante não encotrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pictureBoxFoto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxID_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBoxID_KeyPress(object sender, KeyPressEventArgs teclado)
+        {
+            if (!char.IsControl(teclado.KeyChar) && !char.IsDigit(teclado.KeyChar))
+            {
+                teclado.Handled = true;
             }
         }
     }

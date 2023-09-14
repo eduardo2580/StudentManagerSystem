@@ -33,5 +33,11 @@ namespace StudentManager
             FormListarEstudantes formListarEstudantes = new FormListarEstudantes();
             formListarEstudantes.Show(this);
         }
+
+        private void editarRemoverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AtualizarDeletarEstudante formAtualizarDeletarEstudante = new AtualizarDeletarEstudante();
+            formAtualizarDeletarEstudante.Show(this);
+        }
     }
 }

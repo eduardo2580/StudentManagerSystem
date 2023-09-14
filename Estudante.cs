@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace StudentManager
 {
@@ -51,13 +52,22 @@ namespace StudentManager
             comando.Parameters.Add("@ft", MySqlDbType.LongBlob).Value = foto.ToArray();
 
             bancoDeDados.abrirConexao();
-            if (comando.ExecuteNonQuery() == 1)
+            try
             {
-                bancoDeDados.fecharConexao();
-                return true;
+                if (comando.ExecuteNonQuery() == 1)
+                {
+                    bancoDeDados.fecharConexao();
+                    return true;
+                }
+                else
+                {
+                    bancoDeDados.fecharConexao();
+                    return false;
+                }
             }
-            else
+            catch (MySql.Data.MySqlClient.MySqlException)
             {
+                MessageBox.Show("Imagem grande demais!", "Imagem Grande", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 bancoDeDados.fecharConexao();
                 return false;
             }

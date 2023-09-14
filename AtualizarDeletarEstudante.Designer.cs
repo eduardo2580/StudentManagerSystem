@@ -75,6 +75,7 @@
             this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFoto.TabIndex = 9;
             this.pictureBoxFoto.TabStop = false;
+            this.pictureBoxFoto.Click += new System.EventHandler(this.pictureBoxFoto_Click);
             // 
             // groupBox1
             // 
@@ -275,6 +276,8 @@
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(229, 26);
             this.textBoxID.TabIndex = 38;
+            this.textBoxID.TextChanged += new System.EventHandler(this.textBoxID_TextChanged);
+            this.textBoxID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxID_KeyPress);
             // 
             // buttonProcurar
             // 
