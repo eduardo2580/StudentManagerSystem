@@ -100,5 +100,35 @@ namespace StudentManager
 
             return tabela;
         }
+
+        // Função que executa a contagem.
+        public string execContagem(string query)
+        {
+            MySqlCommand comand = new MySqlCommand(query,bancoDeDados.getConexao);
+
+            bancoDeDados.abrirConexao();
+            string count = comand.ExecuteScalar().ToString();
+            bancoDeDados.fecharConexao();
+
+            return count;
+        }
+
+        // Pega o numero total de estudantes.
+        public string totalEstudante()
+        {
+            return execContagem("SELECT COUNT(*) FROM `estudantes`");
+        }
+
+        // Pega o numero total de estudante do género masculino.
+        public string totalEstudanteMasculino()
+        {
+            return execContagem("SELECT * FROM `estudantes` WHERE `genero` = 'Mascullino'");
+        }
+
+        // Pega o numero total de estudante do género feminino.
+        public string totalEstudanteFeminino()
+        {
+            return execContagem("SELECT * FROM `estudantes` WHERE `genero` = 'Feminino'");
+        }
     }
 }

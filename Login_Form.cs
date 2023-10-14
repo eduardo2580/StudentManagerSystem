@@ -63,16 +63,22 @@ namespace StudentManager
 
             adaptador.SelectCommand = comando;
 
-            adaptador.Fill(tabela);
+            try {
+                adaptador.Fill(tabela);
 
-            if(tabela.Rows.Count > 0)
-            {
-                //MessageBox.Show("YES");
-                this.DialogResult = DialogResult.OK;
+                if(tabela.Rows.Count > 0)
+                {
+                    //MessageBox.Show("YES");
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha inválidos", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Usuário ou senha inválidos", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Não consegui conectar ao banco de dados!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

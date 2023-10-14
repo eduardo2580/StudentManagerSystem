@@ -39,5 +39,11 @@ namespace StudentManager
             AtualizarDeletarEstudante formAtualizarDeletarEstudante = new AtualizarDeletarEstudante();
             formAtualizarDeletarEstudante.Show(this);
         }
+
+        private void estatísticasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            StaticsForm formStaticsForm = new StaticsForm();
+            formStaticsForm.Show(this);
+        }
     }
 }
