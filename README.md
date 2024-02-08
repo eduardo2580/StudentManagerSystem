@@ -1,5 +1,5 @@
 # A Student Manager System
-A student manager system written in C# and uses SQL.
+A student management system written in C# that controls, registers, and lists students in a school. The program, in Portuguese, accesses a MySQL database for its functionalities.
 
 ## Technologies
-This project uses C#, Windows Forms and SQL.
+This project uses C#, Windows Forms and MySQL.
