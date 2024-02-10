@@ -24,3 +24,16 @@ git clone [https://github.com/eduardo2580/StudentManagerSystem]
 
 ⚠️ **Warning:** This information is not complete and may require additional details or steps. Please proceed with caution and seek further clarification if needed.
 
+## License
+
+© 2024 Eduardo Souza Rodrigues. All rights reserved.
+
+This work is licensed under the [Creative Commons Zero v1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
+
+You can copy, modify, distribute, and perform the work, even for commercial purposes, all without asking for permission.
+
+See the [full license text](https://github.com/eduardo2580/StudentManagerSystem/blob/main/LICENSE) for more details.
+
+
