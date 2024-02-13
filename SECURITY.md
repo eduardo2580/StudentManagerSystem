@@ -1,21 +1,29 @@
 # Security Policy
 
-## Supported Versions
+## Reporting Security Issues
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+If you discover a security issue in this project, please report it to the project maintainers. Do not disclose the issue publicly until it has been addressed.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Scope
 
-## Reporting a Vulnerability
+This security policy applies to all aspects of the project.
 
-Use this section to tell people how to report a vulnerability.
+## Reporting Process
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. **Submit a Report:** Report security issues to the project maintainers.
+
+2. **Wait for Response:** The maintainers will acknowledge your report and work to validate and address the issue.
+
+3. **Fixing Process:** Once a fix is ready, it will be deployed, and details will be shared appropriately.
+
+## Handling of Reports
+
+- Security reports will be promptly and thoroughly investigated.
+- Regular updates will be provided on the progress of fixing reported vulnerabilities.
+- Public acknowledgement will be given to those who responsibly disclose valid security issues.
+
+## Thank You
+
+Thank you for your contribution to the security of this project!
+
+
